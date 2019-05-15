@@ -11,6 +11,13 @@
     text-align: center;
     vertical-align: middle !important;
 }
+.badge-pill{
+    width: 50px;
+    height: 50px;
+    font-size: 13px !important;
+    vertical-align: middle !important;
+    display: table-cell !important;
+}
 </style>
 @endsection
 
