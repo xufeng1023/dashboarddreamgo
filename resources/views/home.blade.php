@@ -4,11 +4,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .fa.fa-star.checked{
-    color: #c6ad63;
+    color: #ffc10a;
 }
 .table td, .table th{
     font-size: 13px;
-    text-align: center;
+    text-align: left;
     vertical-align: middle !important;
 }
 .badge-pill{
@@ -130,10 +130,10 @@
                                     @endfor
                                 </div>
                             </td>
-                            <td>
+                            <td class="text-center">
                                 <div class="badge badge-pill {{ $p['diy'] < 45? 'badge-danger' : ($p['diy'] < 70? 'badge-warning' : 'badge-success') }}">{{ $p['diy'] }}%</div>
                             </td>
-                            <td>
+                            <td class="text-center">
                                 <div class="badge badge-pill {{ $p['vip'] < 45? 'badge-danger' : ($p['vip'] < 70? 'badge-warning' : 'badge-success') }}">{{ $p['vip'] }}%</div>
                             </td>
 		            	</tr>
