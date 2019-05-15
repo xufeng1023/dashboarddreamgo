@@ -15,8 +15,9 @@
     width: 50px;
     height: 50px;
     font-size: 13px !important;
-    vertical-align: middle !important;
-    display: table-cell !important;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
 }
 </style>
 @endsection
