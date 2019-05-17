@@ -3,6 +3,9 @@
 @section('style')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+div.other{
+    max-width: 20rem;
+}
 .fa.fa-star.checked{
     color: #ffc10a;
 }
@@ -104,7 +107,7 @@
                             <?php $other = explode('+', @$majors[$key]['mp_other']); ?>
                             <td>
                                 @foreach($other as $o)
-                                    <div>{{ $o }}</div>
+                                    <div class="other">{{ $o }}</div>
                                 @endforeach
                             </td>
                             <?php $tuition = @str_replace(' ', '', $majors[$key]['mp_tuition']); ?>
