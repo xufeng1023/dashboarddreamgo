@@ -56,7 +56,7 @@ div.other{
         				<th>申请材料</th>
         				<th>其他要求</th>
         				<th>学费</th>
-        				<th>申请人优势硬伤分析</th>
+        				<th><div>申请人</div>优势硬伤分析</th>
         				<th><div>DIY</div>申请成功率</th>
         				<th><div>Dreamgo</div>申请成功率</th>
         			</tr>
