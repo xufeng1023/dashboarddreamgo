@@ -81,7 +81,7 @@ div.other{
                             <td>{{ @$majors[$key]['mp_ranking'] }}</td>
                             <td>{{ @$majors[$key]['mp_major_ranking'] ?? '' }}</td>
                             <?php $location = explode(',', @$majors[$key]['mp_location']); ?>
-                            <td>
+                            <td class="nowrap">
                                 <div>{{ $location[0] }}</div>
                                 <div>{{ $location[1] }}</div>
                             </td>
