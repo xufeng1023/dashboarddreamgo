@@ -6,6 +6,9 @@
 div.other{
     max-width: 20rem;
 }
+.nowrap{
+    white-space: nowrap;
+}
 .fa.fa-star.checked{
     color: #ffc10a;
 }
@@ -56,9 +59,9 @@ div.other{
         				<th>申请材料</th>
         				<th>其他要求</th>
         				<th>学费</th>
-        				<th><div>申请人</div>优势硬伤分析</th>
-        				<th><div>DIY</div>申请成功率</th>
-        				<th><div>Dreamgo</div>申请成功率</th>
+        				<th class="nowrap"><div>申请人</div>优势硬伤分析</th>
+        				<th class="nowrap"><div>DIY</div>申请成功率</th>
+        				<th class="nowrap"><div>Dreamgo</div>申请成功率</th>
         			</tr>
         		</thead>
         		<tbody>
