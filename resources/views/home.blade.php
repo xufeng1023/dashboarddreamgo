@@ -115,7 +115,7 @@ div.other{
                             </td>
                             <?php $tuition = @str_replace(' ', '', $majors[$key]['mp_tuition']); ?>
                             <?php $tuition = explode('/', $tuition); ?>
-                            <td><div>{{ $tuition[0] }}</div>{{ $tuition[1] }}</td>
+                            <td><div>{{ $tuition[0] ?? '' }}</div>{{ $tuition[1] ?? '' }}</td>
                             <td>
                                 <div class="mb-1">
                                     <div>GPA</div>
