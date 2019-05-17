@@ -90,7 +90,7 @@ div.other{
                                 <div>2nd: {{ @$majors[$key]['mp_deadline_2'] }}</div>
                                 <div>3rd: {{ @$majors[$key]['mp_deadline_3'] }}</div>
                             </td>
-                            <td>
+                            <td class="nowrap">
                                 @if(@$majors[$key]['mp_recommendation'])
                                     <div>{{ @$majors[$key]['mp_recommendation'] }}份推荐信,</div>
                                 @endif
