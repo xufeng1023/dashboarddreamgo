@@ -89,16 +89,16 @@ div.other{
                             </td>
                             <td>
                                 @if(@$majors[$key]['mp_recommendation'])
-                                    <div>{{ @$majors[$key]['mp_recommendation'] }}份推荐信</div>
+                                    <div>{{ @$majors[$key]['mp_recommendation'] }}份推荐信,</div>
                                 @endif
                                 @if(@$majors[$key]['mp_personal_statement'])
-                                    <div>{{ @$majors[$key]['mp_personal_statement'] }} Personal Statement</div>
+                                    <div>{{ @$majors[$key]['mp_personal_statement'] }} Personal Statement,</div>
                                 @endif
                                 @if(@$majors[$key]['mp_resume'] == 'Yes')
-                                    <div>Resume</div>
+                                    <div>Resume,</div>
                                 @endif
                                 @if(@$majors[$key]['mp_financial_documents'] && @$majors[$key]['mp_financial_documents'] == 'Yes')
-                                    <div>Financial Documents</div>
+                                    <div>Financial Documents,</div>
                                 @endif
                                 @if(@$majors[$key]['mp_transcripts'] == 'Yes')
                                     <div>Transcripts</div>
@@ -115,19 +115,19 @@ div.other{
                             <td><div>{{ $tuition[0] }}</div>{{ $tuition[1] }}</td>
                             <td>
                                 <div>
-                                    <span>GPA</span>
+                                    <div>GPA</div>
                                     @for($i = 1; $i <= 5; $i++)
                                         <span class="fa fa-star {{ $i <= $p['gpa']? 'checked' : '' }}"></span>
                                     @endfor
                                 </div>
                                 <div>
-                                    <span>GRE/GMAT</span>
+                                    <div>GRE/GMAT</div>
                                     @for($i = 1; $i <= 5; $i++)
                                         <span class="fa fa-star {{ $i <= $p['gregmat']? 'checked' : '' }}"></span>
                                     @endfor
                                 </div>
                                 <div>
-                                    <span>课外活动</span>
+                                    <div>课外活动</div>
                                     @for($i = 1; $i <= 5; $i++)
                                         <span class="fa fa-star {{ $i <= $p['activity']? 'checked' : '' }}"></span>
                                     @endfor
