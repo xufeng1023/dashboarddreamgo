@@ -114,19 +114,19 @@ div.other{
                             <?php $tuition = explode('/', $tuition); ?>
                             <td><div>{{ $tuition[0] }}</div>{{ $tuition[1] }}</td>
                             <td>
-                                <div>
+                                <div class="mb-1">
                                     <div>GPA</div>
                                     @for($i = 1; $i <= 5; $i++)
                                         <span class="fa fa-star {{ $i <= $p['gpa']? 'checked' : '' }}"></span>
                                     @endfor
                                 </div>
-                                <div>
+                                <div class="mb-1">
                                     <div>GRE/GMAT</div>
                                     @for($i = 1; $i <= 5; $i++)
                                         <span class="fa fa-star {{ $i <= $p['gregmat']? 'checked' : '' }}"></span>
                                     @endfor
                                 </div>
-                                <div>
+                                <div class="mb-1">
                                     <div>课外活动</div>
                                     @for($i = 1; $i <= 5; $i++)
                                         <span class="fa fa-star {{ $i <= $p['activity']? 'checked' : '' }}"></span>
