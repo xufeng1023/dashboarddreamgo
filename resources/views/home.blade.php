@@ -36,7 +36,7 @@ div.other{
                     <div><span class="text-primary mr-3">GPA:</span>{{ $profile['ms_profile_gpa'] }}</div>
                     <div><span class="text-primary mr-3">标化成绩:</span>{{ $profile['ms_profile_score'] }}</div>
                 </div>
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-sm-9">
                     <div><span class="text-primary mr-3">课外活动:</span>{{ $profile['ms_profile_activity'] }}</div>
                     <div><span class="text-primary mr-3">实习科研:</span>{{ $profile['ms_profile_intern'] }}</div>
                     <div><span class="text-primary mr-3">学生需求:</span>{{ $profile['ms_profile_wants'] }}</div>
