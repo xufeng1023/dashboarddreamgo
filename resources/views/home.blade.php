@@ -78,12 +78,12 @@ div.other{
                                     <a style="color: #c6ad63;" href="{{ @$majors[$key]['mp_website'] }}" target="_blank">官网链接</a>
                                 </div>
                             </td>
-                            <td>{{ @$majors[$key]['mp_ranking'] }}</td>
+                            <td class="ranking">{{ @$majors[$key]['mp_ranking'] }}</td>
                             <td>{{ @$majors[$key]['mp_major_ranking'] ?? '' }}</td>
                             <?php $location = explode(',', @$majors[$key]['mp_location']); ?>
                             <td class="nowrap">
                                 <div>{{ $location[0] }}</div>
-                                <div>{{ $location[1] }}</div>
+                                <div>{{ @$location[1] }}</div>
                             </td>
                             <td>
                                 <div>1st: {{ @$majors[$key]['mp_deadline_1'] }}</div>
@@ -149,4 +149,15 @@ div.other{
         </div>
     </div>
 </div>
+@endsection
+
+@section('js')
+<script>
+    // $(function() {
+    //     $('tbody tr').sort(function(a, b) {
+    //         console.log(Number($(a).find('td.ranking').text()) , Number($(b).find('td.ranking').text()))
+    //         return Number($(a).find('td.ranking').text()) - Number($(b).find('td.ranking').text());
+    //     })
+    // });
+</script>
 @endsection
