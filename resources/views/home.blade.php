@@ -124,7 +124,12 @@ div.other{
                                     @endfor
                                 </div>
                                 <div class="mb-1">
-                                    <div>GRE/GMAT</div>
+                                    @if(isset($profile['ms_profile_is_master']) && $profile['ms_profile_is_master'] == 'no')
+                                        <div>SAT</div>
+                                    @else
+                                        <div>GRE/GMAT</div>
+                                    @endif
+
                                     @for($i = 1; $i <= 5; $i++)
                                         <span class="fa fa-star {{ $i <= $p['gregmat']? 'checked' : '' }}"></span>
                                     @endfor
