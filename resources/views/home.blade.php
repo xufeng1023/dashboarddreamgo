@@ -51,7 +51,7 @@ div.other{
         			<tr>
                         <th></th>
         				<th>学校</th>
-                        @if($profile['ms_profile_type'] != 'high school')
+                        @if(!isset($profile['ms_profile_type']) || $profile['ms_profile_type'] != 'high school')
         				    <th>专业</th>
                         @endif
         				<th><div>综合</div>排名</th>
@@ -74,7 +74,7 @@ div.other{
 		            	<tr>
                             <td>{{ $ranking }}</td>
 		            		<td>{{ @$majors[$key]['mp_school'] }}</td>
-                            @if($profile['ms_profile_type'] != 'high school')
+                            @if(!isset($profile['ms_profile_type']) || $profile['ms_profile_type'] != 'high school')
                                 <td>
                                     <div>{{ @$majors[$key]['mp_major'] }}</div>
                                     <div>
