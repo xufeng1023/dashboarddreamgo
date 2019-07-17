@@ -51,9 +51,11 @@ div.other{
         			<tr>
                         <th></th>
         				<th>学校</th>
-        				<th>专业</th>
+                        @if($profile['ms_profile_type'] != 'high school')
+        				    <th>专业</th>
+                        @endif
         				<th><div>综合</div>排名</th>
-        				<th><div>专业</div>排名</th>
+        				<th hidden><div>专业</div>排名</th>
         				<th>城市</th>
         				<th>申请截止日期</th>
         				<th>申请材料</th>
@@ -72,14 +74,16 @@ div.other{
 		            	<tr>
                             <td>{{ $ranking }}</td>
 		            		<td>{{ @$majors[$key]['mp_school'] }}</td>
-                            <td>
-                                <div>{{ @$majors[$key]['mp_major'] }}</div>
-                                <div>
-                                    <a style="color: #c6ad63;" href="{{ @$majors[$key]['mp_website'] }}" target="_blank">官网链接</a>
-                                </div>
-                            </td>
+                            @if($profile['ms_profile_type'] != 'high school')
+                                <td>
+                                    <div>{{ @$majors[$key]['mp_major'] }}</div>
+                                    <div>
+                                        <a style="color: #c6ad63;" href="{{ @$majors[$key]['mp_website'] }}" target="_blank">官网链接</a>
+                                    </div>
+                                </td>
+                            @endif
                             <td class="ranking">{{ @$majors[$key]['mp_ranking'] }}</td>
-                            <td>{{ @$majors[$key]['mp_major_ranking'] ?? '' }}</td>
+                            <td hidden>{{ @$majors[$key]['mp_major_ranking'] ?? '' }}</td>
                             <?php $location = explode(',', @$majors[$key]['mp_location']); ?>
                             <td class="nowrap">
                                 <div>{{ $location[0] }}</div>
@@ -124,8 +128,13 @@ div.other{
                                     @endfor
                                 </div>
                                 <div class="mb-1">
-                                    @if(isset($profile['ms_profile_is_master']) && $profile['ms_profile_is_master'] == 'no')
-                                        <div>SAT</div>
+                                    @if(isset($profile['ms_profile_type']))
+                                        @if($profile['ms_profile_type'] == 'graduate')
+                                            <div>SAT</div>
+                                        @endif
+                                        @if($profile['ms_profile_type'] == 'high school')
+                                            <div>ISEE/SSAT</div>
+                                        @endif
                                     @else
                                         <div>GRE/GMAT</div>
                                     @endif
