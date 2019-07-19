@@ -51,9 +51,7 @@ div.other{
         			<tr>
                         <th></th>
         				<th>学校</th>
-                        @if(!isset($profile['ms_profile_type']) || $profile['ms_profile_type'] != 'high school')
-        				    <th>专业<div>官网地址</div></th>
-                        @endif
+    				    <th>专业<div>官网地址</div></th>
         				<th><div>综合</div>排名</th>
         				<th hidden><div>专业</div>排名</th>
         				<th>城市</th>
