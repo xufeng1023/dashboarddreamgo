@@ -140,6 +140,9 @@ div.other{
                                         @if($profile['ms_profile_type'] == 'high school')
                                             <div>ISEE/SSAT</div>
                                         @endif
+                                         @if($profile['ms_profile_type'] == 'master')
+                                            <div>GRE/GMAT</div>
+                                        @endif
                                     @else
                                         <div>GRE/GMAT</div>
                                     @endif
