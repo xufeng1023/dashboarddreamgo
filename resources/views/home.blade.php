@@ -52,7 +52,7 @@ div.other{
                         <th></th>
         				<th>学校</th>
                         @if(!isset($profile['ms_profile_type']) || $profile['ms_profile_type'] != 'high school')
-        				    <th>专业</th>
+        				    <th>专业<div>官网地址</div></th>
                         @endif
         				<th><div>综合</div>排名</th>
         				<th hidden><div>专业</div>排名</th>
@@ -74,14 +74,14 @@ div.other{
 		            	<tr>
                             <td>{{ $ranking }}</td>
 		            		<td>{{ @$majors[$key]['mp_school'] }}</td>
-                            @if(!isset($profile['ms_profile_type']) || $profile['ms_profile_type'] != 'high school')
-                                <td>
+                            <td>
+                                @if(!isset($profile['ms_profile_type']) || $profile['ms_profile_type'] != 'high school')
                                     <div>{{ @$majors[$key]['mp_major'] }}</div>
-                                    <div>
-                                        <a style="color: #c6ad63;" href="{{ @$majors[$key]['mp_website'] }}" target="_blank">官网链接</a>
-                                    </div>
-                                </td>
-                            @endif
+                                @endif
+                                <div>
+                                    <a style="color: #c6ad63;" href="{{ @$majors[$key]['mp_website'] }}" target="_blank">官网链接</a>
+                                </div>
+                            </td>
                             <td class="ranking">{{ @$majors[$key]['mp_ranking'] }}</td>
                             <td hidden>{{ @$majors[$key]['mp_major_ranking'] ?? '' }}</td>
                             <?php $location = explode(',', @$majors[$key]['mp_location']); ?>
