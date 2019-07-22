@@ -134,7 +134,7 @@ div.other{
                                 </div>
                                 <div class="mb-1">
                                     @if(isset($profile['ms_profile_type']))
-                                        @if($profile['ms_profile_type'] == 'graduate')
+                                        @if($profile['ms_profile_type'] == 'undergraduate')
                                             <div>SAT</div>
                                         @endif
                                         @if($profile['ms_profile_type'] == 'high school')
