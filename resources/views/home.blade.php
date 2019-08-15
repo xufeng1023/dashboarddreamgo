@@ -74,6 +74,7 @@ div.other{
         		<tbody>
                     <?php $ranking = 0; ?>
         			<?php foreach($programs as $key => $p) : ?>
+                        <?php if($p['vip'] <= 1) continue; ?>
                         <?php if(!isset($majors[$key])) continue; ?>
                         <?php $ranking++; ?>
 		            	<tr>
