@@ -47,7 +47,7 @@ div.other{
             </div>
             <h2 class="mt-5 mb-3">{{ $profile['ms_profile_name'] }} - Dreamgo推荐选校方案</h2>
         	<table class="table table-striped table-bordered shadow">
-        		<thead>
+        		<thead style="background-color: #29abe2;color: #fff;">
         			<tr>
                         <th></th>
         				<th>学校</th>
