@@ -67,6 +67,7 @@
                     </form>
                 </div>
             </div>
+            <div class="text-center my-5">新用户请到<a href="https://dreamgo.com">官网</a>联系我们获得登录账户。</div>
         </div>
     </div>
 </div>
