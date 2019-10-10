@@ -67,7 +67,10 @@
                     </form>
                 </div>
             </div>
-            <div class="text-center my-5">新用户请到<a href="https://dreamgo.com">官网</a>联系我们获得登录账户。</div>
+            <div class="text-center my-5">
+                <div class="mb-3">新用户请<span class="text-primary">扫码以下二维码</span>联系我们获得登录账户。</div>
+                <img src="{{ asset('images/wechat_service.png') }}">
+            </div>
         </div>
     </div>
 </div>
