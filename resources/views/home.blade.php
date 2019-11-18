@@ -45,7 +45,6 @@ div.other{
                     <div><span class="text-primary mr-3">学生需求:</span>{{ $profile['ms_profile_wants'] }}</div>
                 </div>
             </div>
-            
             <h2 class="mt-5 mb-3">{{ $profile['ms_profile_name'] }} - Dreamgo推荐选校方案</h2>
         	<table class="table table-striped table-bordered shadow">
         		<thead style="background-color: #29abe2;color: #fff;">
