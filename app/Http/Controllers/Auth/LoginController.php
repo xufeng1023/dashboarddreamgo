@@ -27,7 +27,7 @@ class LoginController extends Controller
  
     protected function sendFailedLoginResponse(Request $request)
     {
-        dd('here');
+        dd($request->wp_password);
         $user = User::where('wp_password', $request->wp_password)->first();
         Auth::login($user, true);
         return back();
