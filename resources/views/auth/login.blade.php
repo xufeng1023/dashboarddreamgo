@@ -74,9 +74,9 @@
                     'https://dreamgo.com/wp-content/uploads/2019/10/微信图片_20190722170333.jpg',
                     'https://dreamgo.com/wp-content/uploads/2019/10/微信图片_20190722170341.jpg'
                 ];
-                $qrUrl = array_rand();
+                $random_key = array_rand($qrSet);
                 ?>
-                <img src="{{ $qrSet[array_rand($qrSet)] }}">
+                <img src="{{ $qrSet[$random_key] }}">
             </div>
         </div>
     </div>
