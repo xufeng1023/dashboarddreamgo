@@ -69,7 +69,13 @@
             </div>
             <div class="text-center my-5">
                 <div class="mb-3">新用户请<span class="text-primary">扫码以下二维码</span>联系我们获得登录账户。</div>
-                <img src="{{ asset('images/wechat_service.png') }}">
+                <?php
+                $qrUrl = array_rand([
+                    'https://dreamgo.com/wp-content/uploads/2019/10/微信图片_20190722170333.jpg',
+                    'https://dreamgo.com/wp-content/uploads/2019/10/微信图片_20190722170341.jpg'
+                ]);
+                ?>
+                <img src="{{ $qrUrl }}">
             </div>
         </div>
     </div>
